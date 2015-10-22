@@ -1,0 +1,7 @@
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\bin\Debug\Repository.dll
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\bin\Debug\Repository.pdb
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\bin\Debug\DataAccess.dll
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\bin\Debug\DataAccess.pdb
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\obj\Debug\Repository.dll
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\Repository\obj\Debug\Repository.pdb

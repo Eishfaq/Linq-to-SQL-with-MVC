@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HRM_First" Class="HrmDataModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SHAFA-PC\SQLSERVER;Initial Catalog=HRM_First;Integrated Security=True" SettingsObjectName="DataAccess.Properties.Settings" SettingsPropertyName="HRM_FirstConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Departments" Member="Departments">
+    <Type Name="Department">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="D_Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Department_Employee" Member="Employees" ThisKey="Id" OtherKey="Department_Id" Type="Employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Designations" Member="Designations">
+    <Type Name="Designation">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Desig_Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Designation_Employee" Member="Employees" ThisKey="Id" OtherKey="Designation_Id" Type="Employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Documents" Member="Documents">
+    <Type Name="Document">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="File_Name" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Middle_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PresentAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PermanentAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile_Number" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marital_Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fathers_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mothers_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Department_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JobLocation_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Department_Employee" Member="Department" ThisKey="Department_Id" OtherKey="Id" Type="Department" IsForeignKey="true" />
+      <Association Name="Designation_Employee" Member="Designation" ThisKey="Designation_Id" OtherKey="Id" Type="Designation" IsForeignKey="true" />
+      <Association Name="JobLocation_Employee" Member="JobLocation" ThisKey="JobLocation_Id" OtherKey="Id" Type="JobLocation" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JobLocation" Member="JobLocations">
+    <Type Name="JobLocation">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="District_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="JobLocation_Employee" Member="Employees" ThisKey="Id" OtherKey="JobLocation_Id" Type="Employee" />
+    </Type>
+  </Table>
+</Database>

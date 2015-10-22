@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HrmDataModel">
+  <DataContextMoniker Name="/HrmDataModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8358b614-9212-43d5-9f11-a95812763dae" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/HrmDataModelDataContext/Department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f30f115-a714-4b87-9474-6c387ba0bcef" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8ea8de3-3e6d-4268-b696-c84bf2af2026" absoluteBounds="0.75, 4.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/HrmDataModelDataContext/Designation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60049d73-74cf-4fb1-87df-6673a6ea4157" absoluteBounds="0.765, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c068db1-e783-4250-bfcd-6c816fe41c50" absoluteBounds="5.75, 6.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/HrmDataModelDataContext/Document" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f6d1bb0-f8c4-474d-b17d-c6bc53a5caad" absoluteBounds="5.7650000000000006, 6.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6336391e-2d1a-491e-b3f3-4b632bfae1df" absoluteBounds="4.875, 1.625, 2, 3.886212565104167">
+      <DataClassMoniker Name="/HrmDataModelDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="def85dd0-b2c4-43fb-bb1d-6a84daf14206" absoluteBounds="4.8900000000000006, 2.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="158ef842-b420-4528-968a-cc0dbcb08609" absoluteBounds="0.75, 2.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/HrmDataModelDataContext/JobLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af746401-b917-42da-bfd0-61a2273305b1" absoluteBounds="0.765, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.88064697265625); (4.875 : 1.88064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HrmDataModelDataContext/Department/Department_Employee" />
+      <nodes>
+        <classShapeMoniker Id="8358b614-9212-43d5-9f11-a95812763dae" />
+        <classShapeMoniker Id="6336391e-2d1a-491e-b3f3-4b632bfae1df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.19310628255208); (4.875 : 5.19310628255208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HrmDataModelDataContext/Designation/Designation_Employee" />
+      <nodes>
+        <classShapeMoniker Id="c8ea8de3-3e6d-4268-b696-c84bf2af2026" />
+        <classShapeMoniker Id="6336391e-2d1a-491e-b3f3-4b632bfae1df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.47199625651042); (4.875 : 3.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HrmDataModelDataContext/JobLocation/JobLocation_Employee" />
+      <nodes>
+        <classShapeMoniker Id="158ef842-b420-4528-968a-cc0dbcb08609" />
+        <classShapeMoniker Id="6336391e-2d1a-491e-b3f3-4b632bfae1df" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

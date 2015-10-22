@@ -1,0 +1,6 @@
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\bin\Debug\DataAccess.dll.config
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\bin\Debug\DataAccess.dll
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\bin\Debug\DataAccess.pdb
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\obj\Debug\DataAccess.dll
+c:\users\eishfaq\documents\visual studio 2013\Projects\Hrm_FirstApplication\DataAccess\obj\Debug\DataAccess.pdb
